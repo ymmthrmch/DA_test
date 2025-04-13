@@ -1,6 +1,17 @@
 import sys
 from collections import defaultdict
 
+"""
+無向・重み付きの単純グラフ（自己ループ・多重辺なし）が与えられる。
+このグラフにおいて、最長の経路を1つ求めて出力する。
+
+- 経路の始点と終点は同じでもよい。
+- ただし、同じ頂点を2度以上通ることはできない。
+- 同じ辺を2度通ることもできない。
+- 頂点のIDは int 型、辺の長さ（重み）は float 型で与えられる。
+- 最長経路のうち1つを、改行区切りで出力する。
+"""
+
 def main():
 
     lines = sys.stdin.read().strip().splitlines()
